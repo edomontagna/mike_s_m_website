@@ -83,7 +83,6 @@ export const IMAGES = {
     LOGO_DAKOTA: "https://assets.zyrosite.com/YyvZLRjD7jCGlVVb/dakota-YleWLK02D6TEk3EK.png",
     LOGO_BSA: "https://assets.zyrosite.com/YyvZLRjD7jCGlVVb/bsa-mP4OXrLPwEuJ5lOZ.png",
     LOGO_ADAMI: "https://assets.zyrosite.com/YyvZLRjD7jCGlVVb/adami-Aq2W0KXe15IMDvv7.png",
-    LOGO_DEVELEY: "https://assets.zyrosite.com/YyvZLRjD7jCGlVVb/develey-dJoZGg0eEBTGeBoz.png",
   },
 
   // 💍 PAGINA MATRIMONI
