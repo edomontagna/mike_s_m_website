@@ -104,7 +104,6 @@ export const COLLABORATIONS: CollaborationItem[] = [
   { id: 'dakota', name: 'Dakota', logo: IMAGES.PARTNERS.LOGO_DAKOTA },
   { id: 'bsa', name: 'BSA', logo: IMAGES.PARTNERS.LOGO_BSA },
   { id: 'adami', name: 'Adami', logo: IMAGES.PARTNERS.LOGO_ADAMI },
-  { id: 'develey', name: 'Develey Italia', logo: IMAGES.PARTNERS.LOGO_DEVELEY },
 ];
 
 export const TESTIMONIALS: TestimonialItem[] = [
