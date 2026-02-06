@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- SEO & Branding -->
+    <title>Mike Street Magic | Mago Professionista per Eventi, Matrimoni e Aziende</title>
+    <meta name="description" content="Mike Street Magic - Mago e illusionista professionista per matrimoni, eventi aziendali e feste private. Magia da vicino, mentalismo e spettacoli di scena in tutta Italia." />
+    <meta name="keywords" content="mago, illusionista, matrimonio, eventi aziendali, magia da vicino, mentalismo, spettacolo, Verona, Italia" />
+    <meta name="author" content="Mike Street Magic" />
+    <meta name="theme-color" content="#030303" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mike Street Magic | Mago Professionista" />
+    <meta property="og:description" content="Trasforma il tuo evento in un'esperienza indimenticabile con magia d'élite e mentalismo di alto profilo." />
+    <meta property="og:image" content="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1200,fit=crop/YyvZLRjD7jCGlVVb/4-m6LZxKPEobc5R184.jpg" />
+    <meta property="og:url" content="https://mikestreetmagic.com" />
+    <meta property="og:locale" content="it_IT" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mike Street Magic | Mago Professionista" />
+    <meta name="twitter:description" content="Trasforma il tuo evento in un'esperienza indimenticabile con magia d'élite." />
+    <meta name="twitter:image" content="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1200,fit=crop/YyvZLRjD7jCGlVVb/4-m6LZxKPEobc5R184.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=168,fit=crop,q=95/YyvZLRjD7jCGlVVb/mike_street_magic_logo-AoPqzL8vvyiMlGE4.webp" />
+
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://assets.zyrosite.com" />
+    <link rel="preconnect" href="https://player.vimeo.com" />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+    <!-- LENIS FLUID SCROLL CSS -->
+    <style>
+      html.lenis, html.lenis body {
+        height: auto;
+      }
+      .lenis.lenis-smooth {
+        scroll-behavior: auto !important;
+      }
+      .lenis.lenis-smooth [data-lenis-prevent] {
+        overscroll-behavior: contain;
+      }
+      .lenis.lenis-stopped {
+        overflow: hidden;
+      }
+      .lenis.lenis-scrolling iframe {
+        pointer-events: none;
+      }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Mike Street Magic",
+      "description": "Mago e illusionista professionista per matrimoni, eventi aziendali e feste private in tutta Italia.",
+      "url": "https://mikestreetmagic.com",
+      "telephone": "+393478130426",
+      "email": "mikeanimazione@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Verona",
+        "addressCountry": "IT"
+      },
+      "priceRange": "€€",
+      "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1200,fit=crop/YyvZLRjD7jCGlVVb/4-m6LZxKPEobc5R184.jpg",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "100"
+      }
+    }
+    </script>
+</head>
+  <body>
+    <div id="root"></div>
+    <!-- Main Entry Point -->
+    <script type="module" src="/index.tsx"></script>
+
+    <!-- LENIS FLUID SCROLL JS -->
+    <script defer src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script>
+      // Initialize Lenis after it loads
+      function initLenis() {
+        if (typeof Lenis === 'undefined') {
+          setTimeout(initLenis, 50);
+          return;
+        }
+        const lenis = new Lenis({
+          duration: 0.7,
+          easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+          direction: 'vertical',
+          gestureDirection: 'vertical',
+          smooth: true,
+          mouseMultiplier: 0.8,
+          smoothTouch: false,
+          touchMultiplier: 1.5,
+        });
+
+        function raf(time) {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+        window.lenis = lenis;
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLenis);
+      } else {
+        initLenis();
+      }
+    </script>
+  </body>
+</html>
