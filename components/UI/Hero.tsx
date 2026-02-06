@@ -279,7 +279,7 @@ const Hero: React.FC<HeroProps> = ({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
-          className="absolute inset-0 z-30 pointer-events-none"
+          className="absolute inset-0 z-[35] pointer-events-none"
         >
           {/* DESKTOP BUTTON (Centered Bottom) */}
           <button
